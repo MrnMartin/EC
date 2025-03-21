@@ -1,2 +1,2 @@
 # EC
-Just un travail pas piquer des hannetons
+Pas piquer des hannetons
