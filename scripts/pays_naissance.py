@@ -34,7 +34,7 @@ def pays_naissance(pays):
 df[col_pays] = df[col_pays].apply(pays_naissance)
 
 # Sauvegarde du fichier
-df.to_excel('Resultats.xlsx', index=False)
+df.to_excel('Resultats_homogenises.xlsx', index=False)
 
 # Aperçu des résultats
 print(df[[col_pays]].head())

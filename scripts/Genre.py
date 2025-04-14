@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-file_path = 'results-survey293392-4.4.xlsx'
+file_path = '../corpus/results-survey293392-4.4.xlsx'
 df = pd.read_excel(file_path)
 print (df.columns)
 
