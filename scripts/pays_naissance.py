@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Chargement du fichier Excel
-file_path = '../corpus/results-survey293392-4.4.xlsx'
+file_path = 'Resultats_nat.xlsx'
 df = pd.read_excel(file_path)
 
 # Nettoyage des noms de colonnes : supprime les espaces et caractères spéciaux invisibles

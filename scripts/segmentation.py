@@ -13,7 +13,7 @@ data = df.values.tolist()
 
 # Sauvegarde des données pour chaque vidéo (avec format liste)
 for video_number in range(1, 11):
-    output_filename = f"../videos/video{video_number}.txt"
+    output_filename = f"../videos/video{video_number}.csv"
     with open(output_filename, 'w', encoding='utf-8') as out_file:
         for row in data:
             combined = get_video_annotations(row, video_number)
