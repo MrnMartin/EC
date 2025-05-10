@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # Chargement du fichier Excel
 file_path = 'Resultats_homogenises.xlsx'
-df = pd.read_excel(file_path)
+df = pd.read_excel(file_path, engine="openpyxl")
 
 # Nettoyage des noms de colonnes
 df.columns = df.columns.str.strip().str.replace('\xa0', '', regex=False)
