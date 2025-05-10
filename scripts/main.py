@@ -3,7 +3,7 @@
 import subprocess
 
 # Liste des scripts à lancer :
-scripts = ['Genre.py', 'Nationalite.py', 'pays_naissance.py', 'segmentation.py']
+scripts = ['Genre.py', 'Nationalite.py', 'pays_naissance.py', 'regroupement-ages.py', 'niveau_etude.py','segmentation.py']
 
 for script in scripts:
     print(f"Exécution de {script}...")
