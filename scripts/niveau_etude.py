@@ -69,7 +69,7 @@ for k, v in frequences.items():
 # Affichage du résultat final
 #print(frequences)
 #print("---====---")
-print(dict(resultats))
+#print(dict(resultats))
 
 # Affichage des valeurs spécifiques d'une classe
 """
@@ -108,7 +108,7 @@ def niveau_etude(niv):
 df[col_etude] = df[col_etude].apply(niveau_etude)
 #print(df['groupe_etude'].value_counts()) pour les occurences
 
-df.to_excel('Resultats_NivEtude.xlsx', index=False)
+df.to_excel('Resultats_homogenises.xlsx', index=False)
 
 # Aperçu des résultats
 #print(df[[col_etude]].head())

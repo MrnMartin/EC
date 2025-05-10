@@ -8,10 +8,10 @@ def categorize_age(age):
         if match:
             age = int(match.group())
         else:
-            return "Non spécifié" # On indique si la case est vide
+            return "Non spécifié"  # On indique si la case est vide
     elif pd.isna(age):  # Si les valeurs ne sont pas exploitables
         return "Non spécifié"
-    
+
     # Catégorisation par tranche d'âge
     if age <= 20:
         return "20 ans et moins"
@@ -23,24 +23,24 @@ def categorize_age(age):
         return "45 ans et plus"
     return "Non spécifié"
 
-def process_xsls(input_file, output_file):
-    """Charge le fichier xsls, applique la transformation et sauvegarde le fichier modifié."""
-    # On charge le fichier xsls
-    df = pd.read_excel(input_file)
-    
+def process_xlsx(input_file, output_file):
+    """Charge le fichier .xlsx, applique la transformation et sauvegarde le fichier modifié."""
+    # On charge le fichier Excel (.xlsx)
+    df = pd.read_excel(input_file, engine="openpyxl")
+
     # On vérifie si la colonne "âge" existe
     age_column = next((col for col in df.columns if "âge" in col.lower()), None)
     if not age_column:
         raise ValueError("Colonne contenant les âges introuvable dans le fichier.")
-    
+
     # On remplace la colonne des âges par la catégorie d'âge
     df[age_column] = df[age_column].apply(categorize_age)
-    
-    # Sauvegarde du fichier modifié
-    df.to_csv(output_file, index=False)
+
+    # Sauvegarde du fichier modifié en .xlsx
+    df.to_excel(output_file, index=False, engine="openpyxl")
     print(f"Fichier sauvegardé sous : {output_file}")
 
 # Utilisation
 input_file = "Resultats_homogenises.xlsx"
 output_file = "Resultats_homogenises.xlsx"
-process_xsls(input_file, output_file)
+process_xlsx(input_file, output_file)
