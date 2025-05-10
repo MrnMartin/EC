@@ -20,5 +20,5 @@ def homogenize_genre(gender):
     return gender
 
 df['Votre genre?'] = df['Votre genre?'].apply(homogenize_genre)
-df.to_excel('Genre_mod.xlsx', index=False)
+df.to_excel('Resultats_homogenises.xlsx', index=False)
 print("Le fichier à été modifié")

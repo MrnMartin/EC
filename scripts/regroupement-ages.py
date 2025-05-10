@@ -23,10 +23,10 @@ def categorize_age(age):
         return "45 ans et plus"
     return "Non spécifié"
 
-def process_csv(input_file, output_file):
-    """Charge le fichier CSV, applique la transformation et sauvegarde le fichier modifié."""
-    # On charge le fichier CSV
-    df = pd.read_csv(input_file)
+def process_xsls(input_file, output_file):
+    """Charge le fichier xsls, applique la transformation et sauvegarde le fichier modifié."""
+    # On charge le fichier xsls
+    df = pd.read_excel(input_file)
     
     # On vérifie si la colonne "âge" existe
     age_column = next((col for col in df.columns if "âge" in col.lower()), None)
@@ -41,6 +41,6 @@ def process_csv(input_file, output_file):
     print(f"Fichier sauvegardé sous : {output_file}")
 
 # Utilisation
-input_file = "video1.csv"
-output_file = "resultat-regroupement-ages.csv"
-process_csv(input_file, output_file)
+input_file = "Resultats_homogenises.xlsx"
+output_file = "Resultats_homogenises.xlsx"
+process_xsls(input_file, output_file)

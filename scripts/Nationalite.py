@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-file_path = 'Genre_mod.xlsx'
+file_path = 'Resultats_homogenises.xlsx'
 df= pd.read_excel(file_path)
 print (df.columns)
 
@@ -22,6 +22,6 @@ def europ(nationalite):
 
 df[col_nationalite] = df[col_nationalite].apply(europ)
 
-df.to_excel('Resultats_nat.xlsx', index=False)
+df.to_excel('Resultats_homogenises.xlsx', index=False)
 
 print(df[[col_nationalite]].head())

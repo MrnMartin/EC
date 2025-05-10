@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Chargement du fichier Excel
-file_path = 'Resultats_nat.xlsx'
+file_path = 'Resultats_homogenises.xlsx'
 df = pd.read_excel(file_path)
 
 # Nettoyage des noms de colonnes : supprime les espaces et caractères spéciaux invisibles
