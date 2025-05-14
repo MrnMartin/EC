@@ -5,7 +5,7 @@ import re
 import os
 
 # Nom de la vidéo à traiter
-video = "video8"
+video = "video5"
 print("Pour :", video)
 
 # Créer le dossier de sortie s’il n’existe pas
@@ -13,7 +13,7 @@ output_dir = f"graphs_{video}"
 os.makedirs(output_dir, exist_ok=True)
 
 # Charger le fichier Excel
-df = pd.read_excel(f"{video}.xlsx")
+df = pd.read_excel(f"{video5}.xlsx")
 
 #############################################################################################
 # 1. Détection dynamique des colonnes émotions et excessivité
