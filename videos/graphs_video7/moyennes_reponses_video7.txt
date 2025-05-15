@@ -1,0 +1,25 @@
+=== Moyennes Excessivité ===
+Composantes	Moyenne sur 2	Moyenne (%)
+excessif_la_manière_dont_ils_se_répartissent_la_parole_(ils_se_coupent_trop_souvent,_etc.)	1.125	56.25
+excessif_la_voix_des_personnes_qui_parlent_(trop_grave,_trop_aiguë,_trop_forte,_trop_faible...)	1.063157894736842	53.16
+excessif_la_vitesse_à_laquelle_ils_parlent_(trop_rapide,_trop_lent,_trop_de_silences,_pas_assez_de_silences...)	0.968421052631579	48.42
+excessif_le_ton_employé_(trop_en_colère,_trop_romantique,_trop_neutre,_trop_monotone,_etc.)	0.8617021276595744	43.09
+excessif_le_discours_en_général_(trop_répétitif,_pas_clair,_difficile_à_suivre...)	0.8541666666666666	42.71
+excessif_la_vidéo_dans_son_ensemble	0.7692307692307693	38.46
+excessif_les_gestes_des_personnes_qui_apparaissent	0.7634408602150538	38.17
+excessif_les_mots_utilisés_(trop_familiers,_trop_soutenus,_trop_vulgaires,_trop_d'expressions_figées,_etc.)	0.7395833333333334	36.98
+excessif_les_expressions_de_leur_visage	0.6989247311827957	34.95
+excessif_le_sujet_abordé	0.5113636363636364	25.57
+excessif_autre	0.18181818181818182	9.09
+
+
+=== Moyennes Émotions ===
+Composantes	Moyennes sur 2 	Moyennes (%)
+émotion_aucune	0.3564356435643564	35.64
+émotion_ennui	0.33663366336633666	33.66
+émotion_joie	0.21782178217821782	21.78
+émotion_surprise	0.0891089108910891	8.91
+émotion_dégout	0.06930693069306931	6.93
+émotion_colère	0.019801980198019802	1.98
+émotion_tristesse	0.009900990099009901	0.99
+émotion_peur	0.0	0.0
