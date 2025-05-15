@@ -62,7 +62,7 @@ emotion_columns = [col for col in df.columns if col.startswith("émotion_")]
 df = convertir_binaire(df, emotion_columns)
 
 df.to_excel(f"{video}.xlsx", index=False)
-print("✅ Renommage et conversion binaire terminés !")
+print("✅ Pré-traitement terminé !")
 
 #############################################################################################
 # 4. Extraction des sous-dataframes
@@ -77,7 +77,7 @@ def graphe_moyennes(df_subset, label):
     mean_scores = df_subset.mean().sort_values(ascending=False)
     plt.figure(figsize=(20, 12))
     sns.barplot(x=mean_scores.values, y=mean_scores.index, palette="Reds_r")
-    plt.xlabel("Note moyenne (0 à 2)")
+    plt.xlabel("Note moyenne")
     plt.title(f"{label.capitalize()} perçus")
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, f"{label}_graph_moyenne_{video}.png"))
@@ -121,5 +121,5 @@ if __name__ == "__main__":
     comparaison_par_profil(df, df_emotions, "Votre niveau d'études?", "emotion")
     heatmap_correlation(df_emotions, "emotion")
 
-    print(f"✅ Tous les graphiques ont été générés dans le dossier {output_dir}/")
+    print(f"✅ Tous les graphes ont été sauvegardé dans le dossier {output_dir}/")
 
