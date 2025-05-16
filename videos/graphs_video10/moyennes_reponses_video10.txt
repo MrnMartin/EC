@@ -15,11 +15,11 @@ excessif_autre	0.125	6.25
 
 === Moyennes Émotions ===
 Composantes	Moyennes sur 2 	Moyennes (%)
-émotion_aucune		
-émotion_peur		
-émotion_colère		
-émotion_joie		
-émotion_surprise		
-émotion_tristesse		
-émotion_dégout		
-émotion_ennui		
+émotion_joie	0.3838383838383838	38.38
+émotion_surprise	0.29292929292929293	29.29
+émotion_dégout	0.23232323232323232	23.23
+émotion_ennui	0.12121212121212122	12.12
+émotion_aucune	0.1111111111111111	11.11
+émotion_colère	0.06060606060606061	6.06
+émotion_tristesse	0.010101010101010102	1.01
+émotion_peur	0.0	0.0
