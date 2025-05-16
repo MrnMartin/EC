@@ -1,4 +1,4 @@
-# Enrichiessement de corpus 
+# Enrichissement de corpus 
 
 
 ## Introduction : 
@@ -14,5 +14,8 @@ L’objectif de ce projet était de savoir homogénéiser des données en consta
  
 *La perception de l’excessivité dans le langage oral est-elle influencée par des variables telles que l’âge, le genre, le niveau d’études des annotateurs ?*
 
+
+### Contributeurs : 
+-- Martin Marina-bella -- Ciomne Catalin -- Meftah Ghania -- Tuyay Rachelle
 
 
